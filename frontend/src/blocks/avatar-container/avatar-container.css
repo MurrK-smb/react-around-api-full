@@ -1,0 +1,20 @@
+
+.avatar-container {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+@media screen and (max-width: 785px) {
+  .avatar-container {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .avatar-container {
+    width: 120px;
+  }
+}

@@ -1,0 +1,14 @@
+
+.info {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 410px) {
+  .info {
+    height: 50px;
+  }
+}

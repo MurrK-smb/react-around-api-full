@@ -1,0 +1,29 @@
+
+.modal__close-button {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: -48px;
+  right: -48px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  z-index: 2000;
+  transition: opacity .2s ease;
+}
+
+.modal__close-button:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .modal__close-button {
+    max-width: 37px;
+    max-height: 37px;
+    right: 0;
+  }
+}

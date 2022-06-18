@@ -1,0 +1,17 @@
+
+.avatar-edit {
+  visibility: hidden;
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  background: url(../../images/edit.svg);
+  background-size: cover;
+  position: absolute;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.avatar-container:hover .avatar-edit {
+  visibility: visible;
+  cursor: pointer;
+}

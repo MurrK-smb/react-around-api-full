@@ -1,0 +1,26 @@
+
+.info__caption {
+  max-width: 20ch;
+  height: fit-content;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.22;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 785px) {
+  .info__caption {
+    align-self: flex-start;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .info__caption {
+    margin: 0 auto;
+  }
+}

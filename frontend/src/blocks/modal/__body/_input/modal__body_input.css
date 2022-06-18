@@ -1,0 +1,19 @@
+
+.modal__body_input {
+  width: min(100%, 430px);
+  margin: 19px;
+  padding: 34px 36px 36.5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: white;
+}
+
+@media screen and (max-width: 320px) {
+  .modal__body_input {
+    max-width: 282px;
+    padding: 25px 22px;
+  }
+}

@@ -1,0 +1,15 @@
+
+.content {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 45px 19px 60px;
+  box-sizing: content-box;
+  background-color: black;
+  font-family: Inter, Helvetica;
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 28px 0 36px;
+  }
+}

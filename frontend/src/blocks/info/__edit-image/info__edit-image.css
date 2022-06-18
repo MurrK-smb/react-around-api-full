@@ -1,0 +1,12 @@
+
+.info__edit-image {
+  width: 10px;
+  margin: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .info__edit-image {
+    width: 7.5px;
+  }
+}
+

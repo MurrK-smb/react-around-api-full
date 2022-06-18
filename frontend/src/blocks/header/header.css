@@ -1,0 +1,12 @@
+.header {
+  padding-bottom: 41px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px rgb(84, 84, 84, 0.7);
+}
+
+@media screen and (max-width: 620px) {
+  .header {
+    padding-bottom: 32px;
+  }
+}
