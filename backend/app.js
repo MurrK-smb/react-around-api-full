@@ -6,7 +6,7 @@ const { errors } = require("celebrate");
 const routes = require("./routes");
 const { requestLogger, errorLogger } = require("./middlewares/logger");
 require("dotenv").config();
-const { mongoDbAdress, limiter } = require("./utils/constants");
+const { mongoDbAdress, handleServerError } = require("./utils/constants");
 
 const app = express();
 const { PORT = 3000 } = process.env;
@@ -52,12 +52,7 @@ app.use(errorLogger);
 
 app.use(errors());
 
-app.use((err, req, res, next) => {
-  const { statusCode = 500, message } = err;
-  res.status(statusCode).send({
-    message: statusCode === 500 ? "An error occurred on the server" : message,
-  });
-});
+app.use(handleServerError());
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
